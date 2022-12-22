@@ -458,7 +458,12 @@
               placeholder="E-mail"
             />
 
-            <button type="submit" class="subscribe-btn">Subscribe</button>
+            <button type="submit" class="subscribe-btn">
+              Subscribe
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -473,73 +478,67 @@
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
+
+        <h3 class="form-data">Leave your contacts and we will call you back</h3>
+
         <form class="form-field">
-          <p class="form-data">Leave your contacts and we will call you back</p>
+          <label class="modal-field"
+            >Name
+            <div class="form-field-text">
+              <input type="text" name="user_name" class="modal-form-input" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label for="name" class="modal-field">Name</label>
-          <div class="form-field-text">
-            <input
-              type="text"
-              name="user_name"
-              id="name"
-              class="modal-form-input"
-            />
-            <svg class="modal-icon">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
+          <label class="modal-field"
+            >Phone
+            <div class="form-field-text">
+              <input
+                type="tel"
+                name="user_phone_number"
+                class="modal-form-input"
+              />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label for="phone" class="modal-field">Phone</label>
-          <div class="form-field-text">
-            <input
-              type="tel"
-              name="user_phone_number"
-              id="phone"
-              class="modal-form-input"
-            />
-            <svg class="modal-icon">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-          <label for="email" class="modal-field">Email</label>
-          <div class="form-field-text">
-            <input
-              type="email"
-              name="user_email"
-              id="email"
-              class="modal-form-input"
-            />
-            <svg class="modal-icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
+          <label class="modal-field"
+            >Email
+            <div class="form-field-text">
+              <input type="email" name="user_email" class="modal-form-input" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
 
-          <label for="comment" class="modal-field">Comment</label>
-          <div class="form-field-text">
-            <textarea
-              name="user_comment"
-              id="comment"
-              class="form-field-comment"
-              placeholder="Text input"
-            ></textarea>
-          </div>
+          <label class="modal-field"
+            >Comment
+            <div class="form-field-text">
+              <textarea
+                name="user_comment"
+                class="form-field-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </label>
 
-          <div class="form-field-text">
-            <input
-              type="checkbox"
-              id="user_accept"
-              name="user_accept"
-              class="modal-form-comment"
-            />
-            <label for="user_accept" class="modal-form-checkbox"
-              >I accept the terms and conditions of the&nbsp;<a
-                class="policy"
-                href=""
-                >Privacy Policy</a
-              ></label
-            >
-          </div>
-          <button type="submit" class="modal-window-btn">Send</button>
+          <label class="label-checkbox">
+            <input type="checkbox" name="checkbox" class="checkbox-icon" />
+            <span class="vector-icon">
+              <svg class="icon-vector" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+
+            I accept the terms and conditions of the&nbsp;
+            <span class="policy">Privacy Policy</span>
+          </label>
+          <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
     </div>
