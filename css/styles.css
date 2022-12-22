@@ -1017,10 +1017,9 @@ color: rgba(117, 117, 117, 0.5);
     
 
     .modal-form-comment:focus + .modal-form-checkbox::before{
-        
-        background-color: #404BBF;
         border-color: #404BBF;
         background-image: url("../images/vector.svg");
+        background-color: #404BBF;
         background-repeat: no-repeat;
         background-position: center;
         background-origin: content-box;
